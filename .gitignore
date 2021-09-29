@@ -1,0 +1,11 @@
+#Keeping img folder empty to avoid Copyright infringements
+@Resources/img/*.png
+@Resources/img/*.jpg
+@Resources/img/*.bmp
+@Resources/img/*.gif
+@Resources/img/*.tif
+@Resources/img/*.webP
+@Resources/img/*.ico
+
+#Keeping links folder empty to not leak personal info
+@Resources/links/*.lnk
