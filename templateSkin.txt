@@ -1,0 +1,23 @@
+[Rainmeter]
+Update=100
+Group=%%GROUP%%
+SkinWidth=90
+SkinHeight=90
+
+[Metadata]
+Name=%%NAME%%
+Author=JostMK
+
+[Variables]
+Name=%%NAME%%
+size=90
+
+[MenueIcon]
+Meter=Image
+H=#size#
+ImageName=#@#img\#Name#.png
+LeftMouseUpAction=["#@#\links\#Name#.lnk"]
+
+[Boarder]
+Meter=Shape
+Shape=Rectangle 5,5,(#size#-9),(#size#-9) | StrokeWidth 2 | Stroke Color 255,255,255 | Fill Color 0,0,0,1
