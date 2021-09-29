@@ -9,3 +9,7 @@
 
 #Keeping links folder empty to not leak personal info
 @Resources/links/*.lnk
+
+#Removing all skins for apps to keep repository clean
+/Dev/*/
+/Social/*/
