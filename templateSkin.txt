@@ -3,7 +3,7 @@ Update=100
 Group=%%GROUP%%
 SkinWidth=90
 SkinHeight=90
-DefaultStartHidden=1
+DefaultStartHidden=%%HIDDEN%%
 DefaultAlwaysOnTop=-2
 
 [Metadata]
@@ -18,7 +18,7 @@ size=90
 Meter=Image
 H=#size#
 ImageName=#@#img\#Name#.png
-LeftMouseUpAction=["#@#\links\#Name#.lnk"]
+LeftMouseUpAction=["#@#\links\#Name#.%%FILE%%"]
 
 [Boarder]
 Meter=Shape
