@@ -9,6 +9,11 @@ function Initialize()
     maxOffsetX = SKIN:GetVariable('maxOffsetX', '0')
     minOffsetY = SKIN:GetVariable('minOffsetY', '0')
     maxOffsetY = SKIN:GetVariable('maxOffsetY', '0')
+
+    RunBangs({
+        '!HideGroup ' .. groupName,
+        '!Redraw'
+    })
 end
 
 function RunBangs(tableOfBangs)
@@ -28,7 +33,7 @@ end
 function Maximize()
     RunBangs({
         '!SetVariable maximized 1',
-        '!SetVariable curScale ' .. minScale,
+        '!SetVariable curScale ' .. maxScale,
         '!ShowMeter Frame',
         '!ShowGroup ' .. groupName,
         '!SetVariable curOffsetX ' .. maxOffsetX,
@@ -40,7 +45,7 @@ end
 function Minimize()
     RunBangs({
         '!SetVariable maximized 0',
-        '!SetVariable curScale ' .. maxScale,
+        '!SetVariable curScale ' .. minScale,
         '!SetVariable curOffsetX ' .. minOffsetX,
         '!SetVariable curOffsetY ' .. minOffsetY,
         '!HideMeter Frame',

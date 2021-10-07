@@ -3,6 +3,8 @@ Update=100
 Group=%%GROUP%%
 SkinWidth=90
 SkinHeight=90
+DefaultStartHidden=1
+DefaultAlwaysOnTop=-2
 
 [Metadata]
 Name=%%NAME%%
@@ -12,7 +14,7 @@ Author=JostMK
 Name=%%NAME%%
 size=90
 
-[MenueIcon]
+[Icon]
 Meter=Image
 H=#size#
 ImageName=#@#img\#Name#.png

@@ -1,6 +1,6 @@
 import os
 
-print("Creating new Skin:")
+print("Creating new Skin:\n")
 
 name = input('Name: ').strip()
 if not name:
@@ -32,3 +32,4 @@ with open(path, 'w') as outfile:
             line = line.replace('%%NAME%%',name);
             line = line.replace('%%GROUP%%',group);
             outfile.write(line)
+        print("\nSkin created!\n")
